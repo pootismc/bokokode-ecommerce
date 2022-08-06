@@ -1,5 +1,160 @@
-.wrapper {
-    padding: 10px;
+.containerProd {
+}
+
+.head {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.row1 {
+    display: flex;
+}
+
+.test {
+    justify-content: space-between;
+
+}
+
+.test2{
+    width: 60%;
+    padding-top: 25px;
+
+}
+
+.prodImg {
+    background-color: lightblue;
+}
+
+.featured-product{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container {
+    background-color: coral;
+    
+}
+
+.text{ 
+    text-align: center;
+}
+
+.btn {
+    width: 257px;
+    height: 47px;
+    background: #000000;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.test3 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.featuredProd{
+    display: flex;
+    justify-content: space-between;
+}
+
+.peopleAlso {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: right;
+    color: #000000;
+}
+
+
+
+.prodTittle {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.prodType{
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #656565;
+}
+
+.prodDes {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #656565;
+}
+
+
+
+
+
+
+
+
+
+.alsoimg {
+    width: 117px;
+    height: 147px;
+}
+
+.type1 {
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 14px;
+    color: #656565;
+}
+
+.tittle1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    
+}
+
+.price1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #656565;
 }
