@@ -9,30 +9,64 @@ import Col from 'react-bootstrap/Col';
 
 
 function Product() {
-    return (
-      <Container>
-        <Row>
-          <Col> 
-            <img src='images/eggballoon.png' alt="avatar"></img>
-            <p>Food</p>
-            <h1>Egg Baloon</h1>
-            <p className="price">$19.99</p>
-          </Col>
-          <Col> 
-            <img src='images/eggballoon.png' alt="avatar"></img>
-            <p>Food</p>
-            <h1>Egg Baloon</h1>
-            <p className="price">$19.99</p>
-          </Col>
-          <Col> 
-            <img src='images/eggballoon.png' alt="avatar"></img>
-            <p>Food</p>
-            <h1>Egg Baloon</h1>
-            <h4>$19.99</h4>
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+  return(
+    <div className='flex-container'>
+
+      <div className='productsRow'>
+        <div className='products'>
+          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
+          <h3 className='type'>Food</h3>
+          <h2 className='tittle'>Egg Balloon</h2>
+          <h3 className='price'>$93.89 </h3>
+        </div>
+
+        <div className='products'>
+          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
+          <h3 className='type'>Food</h3>
+          <h2 className='tittle'>Egg Balloon</h2>
+          <h3 className='price'>$93.89 </h3>
+        </div>
+
+        <div className='products'>
+          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
+          <h3 className='type'>Food</h3>
+          <h2 className='tittle'>Egg Balloon</h2>
+          <h3 className='price'>$93.89 </h3>
+        </div>
+      </div>
+
+      <div className='productsRow'>
+        <div className='products'>
+          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
+          <h3 className='type'>Food</h3>
+          <h2 className='tittle'>Egg Balloon</h2>
+          <h3 className='price'>$93.89 </h3>
+        </div>
+
+        <div className='products'>
+          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
+          <h3 className='type'>Food</h3>
+          <h2 className='tittle'>Egg Balloon</h2>
+          <h3 className='price'>$93.89 </h3>
+        </div>
+
+        <div className='products'>
+          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
+          <h3 className='type'>Food</h3>
+          <h2 className='tittle'>Egg Balloon</h2>
+          <h3 className='price'>$93.89 </h3>
+        </div>
+      </div>
+
+      
+    </div> 
+  )
+}
 
 export default Product;
+
+
+{/* <img src='images/eggballoon.png' className='' alt='alsobuy'/>
+<h3 className='type'>Food</h3>
+<h2 className='tittle'>Egg Balloon</h2>
+<h3 className='price'>$93.89 </h3> */}
