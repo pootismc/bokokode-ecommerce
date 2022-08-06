@@ -1,7 +1,9 @@
-import Header from "./components/Header";
-import FeaturedProduct from "./components/FeaturedProduct"
-import Photography from "./components/Photography"
+import Header from "./components/Header/Header";
+import Categories from "./components/Categories/Categories";
+import FeaturedProduct from "./components/FeaturedProduct/FeaturedProduct";
+import Product from "./components/Product/Product";
 
+import Products from "./components/Products/Products";
 
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
     <div className="App">
       <Header/>
       <FeaturedProduct/>
-      <Photography/>
+      <Categories/>
+      <Product/>
+      <Products/>
     </div>
   );
 }
