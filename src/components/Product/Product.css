@@ -14,12 +14,14 @@
     height: 514.45px;
 }
 
-.img {
-    width: 282.02px;
-    height: 398.72px;
+.img2 {
+    /* width: 282.02px;
+    height: 398.72px; */
+    width: 150px;
+    height: 200px;
 }
 
-.type {
+.type3 {
     width: 83.77px;
     height: 22.28px;
     font-family: 'Archivo';
@@ -30,7 +32,7 @@
     color: #656565;
 }
 
-.tittle {
+.tittle3 {
     width: 283px;
     height: 45px;
     font-family: 'Archivo';
@@ -41,7 +43,7 @@
     color: #000000;
 }
 
-.price {
+.price3 {
     width: 123px;
     height: 31px;
     font-family: 'Archivo';

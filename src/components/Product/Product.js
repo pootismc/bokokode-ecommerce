@@ -1,72 +1,54 @@
 
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import './Product.css' 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
 
 function Product() {
+  
+  const api = 'https://technical-frontend-api.bokokode.com/api/products'
+  
+  const [products, setProducts] = useState([])
+  
+  useEffect(() => {
+    getProducts()
+  }, [])
+  
+  function getProducts(){
+    fetch (api, {
+      method: 'POST',
+    })
+    .then(res => res.json())
+    .then(response => {
+      const { data = [] } = response 
+      setProducts(data.data)
+      console.log(data.data)
+    })
+  }
+
+
   return(
     <div className='flex-container'>
 
-      <div className='productsRow'>
-        <div className='products'>
-          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
-          <h3 className='type'>Food</h3>
-          <h2 className='tittle'>Egg Balloon</h2>
-          <h3 className='price'>$93.89 </h3>
-        </div>
-
-        <div className='products'>
-          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
-          <h3 className='type'>Food</h3>
-          <h2 className='tittle'>Egg Balloon</h2>
-          <h3 className='price'>$93.89 </h3>
-        </div>
-
-        <div className='products'>
-          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
-          <h3 className='type'>Food</h3>
-          <h2 className='tittle'>Egg Balloon</h2>
-          <h3 className='price'>$93.89 </h3>
-        </div>
-      </div>
-
-      <div className='productsRow'>
-        <div className='products'>
-          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
-          <h3 className='type'>Food</h3>
-          <h2 className='tittle'>Egg Balloon</h2>
-          <h3 className='price'>$93.89 </h3>
-        </div>
-
-        <div className='products'>
-          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
-          <h3 className='type'>Food</h3>
-          <h2 className='tittle'>Egg Balloon</h2>
-          <h3 className='price'>$93.89 </h3>
-        </div>
-
-        <div className='products'>
-          <img src='images/eggballoon.png' className='' alt='alsobuy'/>
-          <h3 className='type'>Food</h3>
-          <h2 className='tittle'>Egg Balloon</h2>
-          <h3 className='price'>$93.89 </h3>
-        </div>
-      </div>
-
+      <div className='productsRow'> {
+        
+          products.map(product => {
+            return (
+              <div className='products'> 
+              <div className='products'>
+              <img src='images/eggballoon.png' className='img2' alt='alsobuy'/>
+              <h3 className='type3'>{product.category}</h3>
+              <h2 className='tittle'>{product.name}</h2>
+              <h3 className='price'>${product.price} </h3>
+              </div>
+              </div>
+            )
+        })
       
+      }
+      </div>
     </div> 
   )
 }
 
 export default Product;
-
-
-{/* <img src='images/eggballoon.png' className='' alt='alsobuy'/>
-<h3 className='type'>Food</h3>
-<h2 className='tittle'>Egg Balloon</h2>
-<h3 className='price'>$93.89 </h3> */}
